@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+  <body class=" bg-black">
+    <div class=" bg-black">
+    <nav class="bg-black shadow-md">
+      <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center h-12">
+              <div class="flex md:mx-auto lg:mx-auto">
+                  <div class="-ml-2 mr-2 flex items-center md:hidden">
+                      <!-- Mobile menu button -->
+                      <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white">
+                          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                      </button>
+                  </div>
+              
+                  <div class="hidden md:mx-auto md:flex md:space-x-8">
+                    <a href="./index.html" class="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+                    <a href="./index.html" class="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900">Research</a>
+                    <a href="./teaching.html" class="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900">Teaching</a>
+                    <a href="./index.html" class="font-medium px-3 py-2 text-white rounded-lg hover:bg-slate-100 hover:text-slate-900">Reports</a>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div id="mobile-menu" class="md:hidden">
+          <div class="pt-2 pb-3 space-y-1">
+              <a href="./index.html" class="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 text-base font-medium text-slate-400 hover:text-slate-800 bg-indigo-50 hover:bg-indigo-100">Home</a>
+              <a href="#" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-slate-400 hover:text-slate-800 hover:bg-gray-50 hover:border-gray-300">Research</a>
+              <a href="./teaching.html" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-slate-400 hover:text-slate-800 hover:bg-gray-50 hover:border-gray-300">Teaching</a>
+              <a href="#" class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-slate-400 hover:text-slate-800 hover:bg-gray-50 hover:border-gray-300">Reports</a>
+          </div>
+      </div>
+  </nav>
+  
+  <script>
+      // JavaScript to toggle mobile menu and dropdowns
+      document.getElementById('mobile-menu-button').addEventListener('click', function () {
+          const menu = document.getElementById('mobile-menu');
+          menu.classList.toggle('hidden');
+          
+          // Toggle hamburger icon and cross icon
+          const icons = this.querySelectorAll('svg');
+          icons.forEach(icon => icon.classList.toggle('hidden'));
+      });
+  
+      document.getElementById('dropdown-button').addEventListener('click', function () {
+          const dropdown = document.getElementById('dropdown-menu');
+          dropdown.classList.toggle('hidden');
+      });
+  
+      document.getElementById('mobile-dropdown-button').addEventListener('click', function () {
+          const dropdown = document.getElementById('mobile-dropdown-menu');
+          dropdown.classList.toggle('hidden');
+      });
+  </script>
+    
+    <div class="shadow-[0_-35px_60px_-15px_rgba(50,100,100,0.5)] w-5/6 bg-slate-800 rounded-lg my-8 mx-auto py-5 px-4">
+      <h3 class="text-left text-white font-semibold text-2xl tracking-tight px-2 text-slate-400">Teacher assistant of courses: </h3>
+      <div class="text-left  px-10 text-lg text-slate-400 py-5">
+        <div class="text-left px-10 text-lg text-slate-400 py-5">
+            <ul class="list-disc">
+                <li>COMP2401 - System programming at Carleton Unversity</li>
+                <li>COMP3000 - Operating systems at Carleton University</li>
+                <li>COMP4900 - Trusted computing and emerging attacks at Carleton University</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <!-- </div>
+    <div class="grid grid-cols-2 gap-10">
+      <div class="shadow-md w-4/5 shadow-teal-500 shadow-lg bg-slate-800 rounded-lg ml-auto">
+        <h3 class="text-left dark:text-white font-semibold text-2xl tracking-tight dark:text-slate-400">Research Interests:</h3>
+      </div>
+      <div class="shadow-md w-4/5 shadow-teal-500 shadow-lg bg-slate-800 rounded-lg mr-auto">
+        <h3 class="text-left dark:text-white font-semibold text-2xl tracking-tight  dark:text-slate-400">Projects:</h3>
+      </div>
+    </div> -->
+</body>
+<footer class="bg-black">
+  <div class="text-center">
+    <a href="https://www.linkedin.com/in/mhosseinasghari/" class="font-medium px-3 py-2 text-slate-400 rounded-lg hover:bg-slate-100 hover:text-slate-900">Linkedin</a>
+    <a href="https://github.com/visionius" class="font-medium px-3 py-2 text-slate-400 rounded-lg hover:bg-slate-100 hover:text-slate-900">Github</a>
+    <a href="https://discord.com/users/599915900291776532" class="font-medium px-3 py-2 text-slate-400 rounded-lg hover:bg-slate-100 hover:text-slate-900">Discord</a>
+    <a href="mailto:hosseinasghari@cmail.carleton.ca" class="font-medium px-3 py-2 text-slate-400 rounded-lg hover:bg-slate-100 hover:text-slate-900">Email</a>
+  </div>
+</footer>
+</div></body></html>
